@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74bd28e4-ede9-4bbb-a92f-dae249a45c06" name="Changes" comment="update POM">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/write_your_own_java_framework_exercices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/write_your_own_java_framework_exercices.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/injector/injector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/injector/injector.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/injector/src/main/java/com/github/forax/framework/injector/InjectorRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/injector/src/main/java/com/github/forax/framework/injector/InjectorRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/injector/src/test/java/com/github/forax/framework/injector/InjectorRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/injector/src/test/java/com/github/forax/framework/injector/InjectorRegistryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interceptor/interceptor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/interceptor/interceptor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/mapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/orm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/orm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/injector/src/main/java/com/github/forax/framework/injector/AnnotationScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/injector/src/main/java/com/github/forax/framework/injector/AnnotationScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/injector/src/test/java/com/github/forax/framework/injector/AnnotationScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/injector/src/test/java/com/github/forax/framework/injector/AnnotationScannerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in injector">
+  <component name="RunManager" selected="JUnit.AnnotationScannerTest">
     <configuration name="All in injector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="injector" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,16 +95,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterceptorRegistryTest$Q2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="interceptor" />
+    <configuration name="AnnotationScannerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="injector" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.github.forax.framework.interceptor.*" />
+          <option name="PATTERN" value="com.github.forax.framework.injector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.github.forax.framework.interceptor.InterceptorRegistryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.github.forax.framework.interceptor.InterceptorRegistryTest$Q2" />
+      <option name="PACKAGE_NAME" value="com.github.forax.framework.injector" />
+      <option name="MAIN_CLASS_NAME" value="com.github.forax.framework.injector.AnnotationScannerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnnotationScannerTest" />
         <item itemvalue="JUnit.All in injector" />
         <item itemvalue="JUnit.com.github.forax.framework.injector in injector" />
         <item itemvalue="JUnit.All in write_your_own_java_framework_exercices" />
         <item itemvalue="JUnit.InterceptorRegistryTest" />
-        <item itemvalue="JUnit.InterceptorRegistryTest$Q2" />
       </list>
     </recent_temporary>
   </component>
