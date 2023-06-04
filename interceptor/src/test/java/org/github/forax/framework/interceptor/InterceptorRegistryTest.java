@@ -1,5 +1,6 @@
 package org.github.forax.framework.interceptor;
 
+import org.github.forax.framework.interceptor.InterceptorRegistryTest.Q6.Example1;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,12 +17,12 @@ import java.util.Objects;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import static org.github.forax.framework.interceptor.InterceptorRegistryTest.Q6.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class InterceptorRegistryTest {
-  /*
   @Nested
   public class Q1 {
 
@@ -537,6 +538,15 @@ public class InterceptorRegistryTest {
 
   @Nested
   class Q6 {
+    @Retention(RUNTIME)
+    @interface Example1 {}
+
+    @Retention(RUNTIME)
+    @interface Example2 {}
+
+    @Retention(RUNTIME)
+    @interface Example3 {}
+
     @Test @Tag("Q6")
     public void cacheCorrectlyInvalidated() {
       interface Foo {
@@ -559,16 +569,6 @@ public class InterceptorRegistryTest {
 
   @Nested
   public class Q7 {
-
-    @Retention(RUNTIME)
-    @interface Example1 {}
-
-    @Retention(RUNTIME)
-    @interface Example2 {}
-
-    @Retention(RUNTIME)
-    @interface Example3 {}
-
     @Test @Tag("Q7")
     public void annotationOnClassMethodAndParameters() {
       @Example1
@@ -602,5 +602,4 @@ public class InterceptorRegistryTest {
     }
   }  // end Q7
 
-  */
 }
